@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/routes"
+    app:startDestination="@id/startFragment">
+
+    <fragment
+        android:id="@+id/fragmentA"
+        android:name="com.android.test.task.componentshomework.ui.navigation.FragmentA"
+        android:label="Fragment A"
+        tools:layout="@layout/fragment_a">
+        <action
+            android:id="@+id/action_fragmentA_to_fragmentB"
+            app:destination="@id/fragmentB" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentB"
+        android:name="com.android.test.task.componentshomework.ui.navigation.FragmentB"
+        android:label="Fragment B"
+        tools:layout="@layout/fragment_b">
+        <action
+            android:id="@+id/action_fragmentB_to_fragmentC"
+            app:destination="@id/fragmentC"
+            app:popUpTo="@id/fragmentA" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentC"
+        android:name="com.android.test.task.componentshomework.ui.navigation.FragmentC"
+        android:label="Fragment C"
+        tools:layout="@layout/fragment_c" />
+    <fragment
+        android:id="@+id/startFragment"
+        android:name="com.android.test.task.componentshomework.ui.start.StartFragment"
+        android:label="fragment_start"
+        tools:layout="@layout/fragment_start" />
+    <fragment
+        android:id="@+id/listFragment"
+        android:name="com.android.test.task.componentshomework.ui.content.ListFragment"
+        android:label="fragment_list"
+        tools:layout="@layout/fragment_list" />
+    <fragment
+        android:id="@+id/serviceFragment"
+        android:name="com.android.test.task.componentshomework.ui.service.ServiceFragment"
+        android:label="fragment_service"
+        tools:layout="@layout/fragment_service" />
+</navigation>

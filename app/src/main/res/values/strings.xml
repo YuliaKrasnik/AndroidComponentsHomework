@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Android Components</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="btn_text_next">Next</string>
+    <string name="tv_fragment_a">Fragment A</string>
+    <string name="tv_fragment_b">Fragment B</string>
+    <string name="tv_fragment_c">Fragment C</string>
+    <string name="btn_text_navigation">Fragment Navigation</string>
+    <string name="btn_text_service">Service</string>
+    <string name="btn_text_content_provider">Content Provider</string>
+    <string name="tv_description_service">The service counts the number.</string>
+    <string name="tv_result_service">Result:</string>
+    <string name="btn_text_start_service">Start service</string>
+</resources>
